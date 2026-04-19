@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 115%; /* 전체 글씨 크기를 기본보다 크게 설정 */
+  }
+  * {
+    touch-action: manipulation;
+  }
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  /* PC/모바일 반응형 완벽 대응을 위한 컨테이너 높이 설정 */
+  .app-container {
+    height: 100vh; /* 구형 브라우저 대비용 */
+    height: 100dvh; /* 최신 모바일 브라우저 주소창 대응 */
+  }
+  
+  .app-container main {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  @media (min-width: 640px) {
+    .app-container {
+      height: 850px;
+      max-height: 90vh;
+    }
+  }
+}
+
+@utility animate-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@utility animate-bounce-slow {
+  animation: bounce-slow 2s infinite;
+}
+
+@utility animate-breath {
+  animation: breath 2.5s ease-in-out infinite;
+}
+
+@utility animate-sway {
+  animation: sway 3s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@utility animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@utility animate-pulse-ring {
+  animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@utility animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(-5%); }
+  50% { transform: translateY(0); }
+}
+
+@keyframes breath { 
+  0%, 100% { transform: scale(1); } 
+  50% { transform: scale(1.1); } 
+}
+
+@keyframes sway { 
+  0%, 100% { transform: rotate(-8deg); } 
+  50% { transform: rotate(8deg); } 
+}
+
+@keyframes float { 
+  0%, 100% { transform: translateY(0px); } 
+  50% { transform: translateY(-12px); } 
+}
+
+@keyframes pulse-ring { 
+  0% { transform: scale(0.7); opacity: 0.5; } 
+  100% { transform: scale(1.4); opacity: 0; } 
+}
+
+@keyframes spin-slow { 
+  100% { transform: rotate(360deg); } 
+}

@@ -1,0 +1,9 @@
+node_modules
+commit.patch
+**.log
+.DS_Store
+dist
+coverage
+.env
+.idea
+.vscode
