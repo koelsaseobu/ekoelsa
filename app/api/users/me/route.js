@@ -14,21 +14,8 @@ export async function GET(request) {
     return NextResponse.json({ error: 'User not found' }, { status: 404 });
   }
 
-  user.points = parseInt(user.points || 0);
-  
-  // 데이터 보정 로직: 포인트 대비 탄소저감량이 너무 낮으면 동기화 (1P = 0.02kg)
-  const expectedMinCarbon = parseFloat((user.points * 0.02).toFixed(3));
-  let currentCarbon = parseFloat(user.carbonSaved || 0);
-  
-  if (currentCarbon < expectedMinCarbon) {
-    currentCarbon = expectedMinCarbon;
-    await redis.hset(`user:${empId}`, 'carbonSaved', currentCarbon);
-    // 전체 통계도 보정 (선택 사항이나 데이터 정합성을 위해 권장)
-    const diff = expectedMinCarbon - parseFloat(user.carbonSaved || 0);
-    await redis.incrbyfloat('stats:totalCarbon', diff);
-  }
-
-  user.carbonSaved = currentCarbon;
+  user.points = parseInt(user.points);
+  user.carbonSaved = parseFloat(user.carbonSaved);
   user.pledgeDone = user.pledgeDone === 'true';
 
   const totalCarbon = await redis.get('stats:totalCarbon');

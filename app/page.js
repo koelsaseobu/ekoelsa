@@ -25,7 +25,6 @@ export default function Page() {
   const [user, setUser] = useState(null);
   const [missions, setMissions] = useState([]);
   const [rankings, setRankings] = useState([]);
-  const [totalCarbon, setTotalCarbon] = useState(0);
   const [todayMissions, setTodayMissions] = useState({});
   const [toastMessage, setToastMessage] = useState('');
   
@@ -52,8 +51,7 @@ export default function Page() {
           api.getRankings()
         ]);
         setMissions(missionsData);
-        setRankings(rankingsData.rankings);
-        setTotalCarbon(rankingsData.totalCarbon);
+        setRankings(rankingsData);
       } catch (error) {
         console.error('Failed to fetch initial data:', error);
       }
@@ -123,8 +121,7 @@ export default function Page() {
   const refreshRankings = async () => {
     try {
       const rankingsData = await api.getRankings();
-      setRankings(rankingsData.rankings);
-      setTotalCarbon(rankingsData.totalCarbon);
+      setRankings(rankingsData);
     } catch (error) {}
   };
 
@@ -299,7 +296,6 @@ export default function Page() {
                 {activeTab === 'forest' && (
                   <RankingTab 
                     rankings={rankings}
-                    totalBranchCarbon={totalCarbon}
                     currentUserEmpId={user?.empId}
                     onRefresh={loadUserProfile}
                     onOpenGrantModal={() => setModals(prev => ({ ...prev, grant: true }))}

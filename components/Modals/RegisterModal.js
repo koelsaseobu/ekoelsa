@@ -14,6 +14,12 @@ export default function RegisterModal({ isOpen, onRegisterSuccess, onSwitchToLog
 
   if (!isOpen) return null;
 
+  const characters = [
+    { type: 'type1', emoji: '🛢️', name: '원유 방울' },
+    { type: 'type2', emoji: '⚡', name: '스마트 전구' },
+    { type: 'type3', emoji: '🚀', name: '슈퍼 배터리' },
+  ];
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -57,6 +63,29 @@ export default function RegisterModal({ isOpen, onRegisterSuccess, onSwitchToLog
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="flex flex-col items-center mb-6">
+            <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">나의 에코 캐릭터 선택</label>
+            <div className="flex gap-4">
+              {characters.map((char) => (
+                <button
+                  key={char.type}
+                  type="button"
+                  onClick={() => setCharType(char.type)}
+                  className={`flex flex-col items-center p-3 rounded-2xl border-2 transition-all ${
+                    charType === char.type 
+                      ? 'border-green-500 bg-green-50' 
+                      : 'border-gray-100 bg-gray-50 grayscale opacity-60'
+                  }`}
+                >
+                  <span className="text-3xl mb-1">{char.emoji}</span>
+                  <span className={`text-[10px] font-bold ${charType === char.type ? 'text-green-700' : 'text-gray-400'}`}>
+                    {char.name}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div>
             <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5 ml-1">이름</label>
             <input 

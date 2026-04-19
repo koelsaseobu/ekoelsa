@@ -3,9 +3,9 @@
 import { Trophy, Gift, RotateCcw, UserMinus } from 'lucide-react';
 import * as api from '@/lib/api';
 
-export default function RankingTab({ rankings, totalBranchCarbon, onOpenGrantModal, onOpenInfoModal, currentUserEmpId, onRefresh }) {
-  const safeTotal = totalBranchCarbon || 0;
-  const equivalentOil = (safeTotal * 0.4).toFixed(2);
+export default function RankingTab({ rankings, onOpenGrantModal, onOpenInfoModal, currentUserEmpId, onRefresh }) {
+  const safeTotal = rankings.reduce((sum, user) => sum + (user.carbonSaved || 0), 0);
+  const equivalentOil = (safeTotal * 0.4).toFixed(1);
 
   const isAdmin = currentUserEmpId === '20220055';
 
@@ -101,11 +101,8 @@ export default function RankingTab({ rankings, totalBranchCarbon, onOpenGrantMod
                     )}
                   </div>
                 )}
-                <div className="text-right flex flex-col items-end">
-                  <div className="font-bold text-green-600 text-sm">{user.points.toLocaleString()}P</div>
-                  <div className="text-[10px] text-blue-500 font-medium bg-blue-50 px-1.5 py-0.5 rounded mt-0.5">
-                    🛢️ {(user.carbonSaved * 0.4).toFixed(2)}L 절감
-                  </div>
+                <div className="text-right">
+                  <div className="font-bold text-green-600 text-sm">{user.points}P</div>
                 </div>
               </div>
             </div>

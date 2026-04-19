@@ -90,9 +90,7 @@ export default function HomeTab({ profile, onOpenCharacterModal, onOpenEduModal,
           <Leaf className="text-green-500 mb-1.5 w-6 h-6" />
           <span className="text-[11px] text-gray-500 font-medium">나의 누적 에너지절약</span>
           <span className="text-[18px] font-bold text-gray-800 mt-0.5">{(profile.carbonSaved || 0).toFixed(2)} kg</span>
-          <div className="bg-blue-50 text-blue-600 text-[10px] font-bold px-2 py-0.5 rounded mt-1">
-            🛢️ 약 {(profile.carbonSaved * 0.4).toFixed(2)} L 절감
-          </div>
+          <p className="text-[8px] text-gray-400 mt-1 leading-tight">*탄소저감 1kg당 원유 약 400ml 절감</p>
         </div>
       </div>
     </div>
