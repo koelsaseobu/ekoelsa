@@ -18,5 +18,10 @@ export async function GET() {
     });
   }
 
-  return NextResponse.json(rankings);
+  const totalCarbon = await redis.get('stats:totalCarbon');
+
+  return NextResponse.json({
+    rankings,
+    totalCarbon: parseFloat(totalCarbon || 0)
+  });
 }
