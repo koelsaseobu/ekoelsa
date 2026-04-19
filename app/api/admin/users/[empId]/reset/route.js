@@ -14,19 +14,27 @@ export async function POST(request, { params }) {
     const { empId } = await params;
     const userKey = `user:${empId}`;
 
-    if (!(await redis.exists(userKey))) {
+    const userData = await redis.hgetall(userKey);
+    if (Object.keys(userData).length === 0) {
       return NextResponse.json({ error: '사용자를 찾을 수 없습니다.' }, { status: 404 });
     }
+
+    const currentCarbon = parseFloat(userData.carbonSaved || 0);
 
     // 포인트 및 탄소저감량 초기화
     await redis.hset(userKey, {
       points: 0,
       carbonSaved: 0,
-      pledgeDone: 'false' // 서약도 초기화할지 선택 사항 (여기서는 초기화)
+      pledgeDone: 'false'
     });
 
     // 랭킹 점수도 0으로 업데이트
     await redis.zadd('rankings', 0, empId);
+
+    // 지사 전체 합계에서 차감
+    if (currentCarbon > 0) {
+      await redis.incrbyfloat('stats:totalCarbon', -currentCarbon);
+    }
 
     return NextResponse.json({ message: '사용자 데이터가 초기화되었습니다.' });
   } catch (error) {

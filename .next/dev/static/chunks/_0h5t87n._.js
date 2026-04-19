@@ -608,14 +608,10 @@ function HomeTab({ profile, onOpenCharacterModal, onOpenEduModal, missionStats }
                                 lineNumber: 92,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-blue-50 text-blue-600 text-[10px] font-bold px-2 py-0.5 rounded mt-1",
-                                children: [
-                                    "🛢️ 약 ",
-                                    (profile.carbonSaved * 0.4).toFixed(2),
-                                    " L 절감"
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[8px] text-gray-400 mt-1 leading-tight",
+                                children: "*탄소저감 1kg당 원유 약 400ml 절감"
+                            }, void 0, false, {
                                 fileName: "[project]/components/Tabs/HomeTab.js",
                                 lineNumber: 93,
                                 columnNumber: 11
@@ -1399,32 +1395,18 @@ function RankingTab({ rankings, totalBranchCarbon, onOpenGrantModal, onOpenInfoM
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "text-right flex flex-col items-end",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "font-bold text-green-600 text-sm",
-                                                        children: [
-                                                            user.points.toLocaleString(),
-                                                            "P"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/Tabs/RankingTab.js",
-                                                        lineNumber: 105,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-[10px] text-blue-500 font-medium bg-blue-50 px-1.5 py-0.5 rounded mt-0.5",
-                                                        children: [
-                                                            "🛢️ ",
-                                                            (user.carbonSaved * 0.4).toFixed(2),
-                                                            "L 절감"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/Tabs/RankingTab.js",
-                                                        lineNumber: 106,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "font-bold text-green-600 text-sm",
+                                                    children: [
+                                                        user.points.toLocaleString(),
+                                                        "P"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Tabs/RankingTab.js",
+                                                    lineNumber: 105,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
                                                 fileName: "[project]/components/Tabs/RankingTab.js",
                                                 lineNumber: 104,
                                                 columnNumber: 17
@@ -3615,265 +3597,10 @@ function Page() {
             setToastMessage(error.info?.error || '캐릭터 변경에 실패했습니다.');
         }
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-full max-w-md bg-white app-container sm:rounded-[2.5rem] shadow-2xl relative flex flex-col overflow-hidden sm:border-[6px] sm:border-gray-200",
-        suppressHydrationWarning: true,
-        children: [
-            mounted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        onLogout: handleLogout,
-                        onDeleteAccount: handleDeleteAccount,
-                        suppressHydrationWarning: true
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.js",
-                        lineNumber: 257,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                        className: "flex-1 overflow-y-auto pb-6",
-                        suppressHydrationWarning: true,
-                        children: user ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            suppressHydrationWarning: true,
-                            children: [
-                                activeTab === 'home' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tabs$2f$HomeTab$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    profile: user,
-                                    onOpenCharacterModal: ()=>setModals((prev)=>({
-                                                ...prev,
-                                                character: true
-                                            })),
-                                    onOpenEduModal: ()=>setModals((prev)=>({
-                                                ...prev,
-                                                edu: true
-                                            })),
-                                    missionStats: {
-                                        completed: Object.entries(todayMissions).filter(([id, date])=>![
-                                                'pledge',
-                                                'm8',
-                                                'm9'
-                                            ].includes(id) && date === new Date().toISOString().split('T')[0]).length,
-                                        total: missions.filter((m)=>![
-                                                'pledge',
-                                                'm8',
-                                                'm9'
-                                            ].includes(m.id)).length
-                                    },
-                                    suppressHydrationWarning: true
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.js",
-                                    lineNumber: 262,
-                                    columnNumber: 19
-                                }, this),
-                                activeTab === 'missions' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tabs$2f$MissionsTab$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    missions: missions,
-                                    todayMissions: todayMissions,
-                                    pledgeDone: user?.pledgeDone,
-                                    onOpenPledgeModal: ()=>setModals((prev)=>({
-                                                ...prev,
-                                                pledge: true
-                                            })),
-                                    onTriggerCamera: (id, title, points, carbon)=>{
-                                        setPendingCameraMission({
-                                            id,
-                                            title,
-                                            points,
-                                            carbon
-                                        });
-                                        document.getElementById('camera-input')?.click();
-                                    },
-                                    onHandleTextMission: (id, title, points, carbon)=>{
-                                        setPendingTextMission({
-                                            id,
-                                            title,
-                                            points,
-                                            carbon
-                                        });
-                                        setModals((prev)=>({
-                                                ...prev,
-                                                textInput: true
-                                            }));
-                                    },
-                                    onQrClick: (mission)=>{
-                                        if (mission.id === 'm9') {
-                                            setToastMessage('물품을 기증하셨다면 담당자에게 신고해 주세요.');
-                                        } else {
-                                            setToastMessage('폐배터리를 수거하셨다면 담당자에게 신고해 주세요.');
-                                        }
-                                    },
-                                    suppressHydrationWarning: true
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.js",
-                                    lineNumber: 276,
-                                    columnNumber: 19
-                                }, this),
-                                activeTab === 'forest' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tabs$2f$RankingTab$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    rankings: rankings,
-                                    totalBranchCarbon: totalCarbon,
-                                    currentUserEmpId: user?.empId,
-                                    onRefresh: loadUserProfile,
-                                    onOpenGrantModal: ()=>setModals((prev)=>({
-                                                ...prev,
-                                                grant: true
-                                            })),
-                                    onOpenInfoModal: ()=>setModals((prev)=>({
-                                                ...prev,
-                                                info: true
-                                            })),
-                                    suppressHydrationWarning: true
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.js",
-                                    lineNumber: 300,
-                                    columnNumber: 19
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/page.js",
-                            lineNumber: 260,
-                            columnNumber: 15
-                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex-1 flex items-center justify-center h-full text-gray-400 text-sm",
-                            suppressHydrationWarning: true,
-                            children: "로그인이 필요합니다."
-                        }, void 0, false, {
-                            fileName: "[project]/app/page.js",
-                            lineNumber: 312,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.js",
-                        lineNumber: 258,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$BottomNav$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        activeTab: activeTab,
-                        onTabChange: setActiveTab,
-                        suppressHydrationWarning: true
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.js",
-                        lineNumber: 317,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$RegisterModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        isOpen: modals.register,
-                        onRegisterSuccess: handleRegisterSuccess,
-                        onSwitchToLogin: ()=>setModals((prev)=>({
-                                    ...prev,
-                                    login: true,
-                                    register: false
-                                }))
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.js",
-                        lineNumber: 319,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$LoginModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        isOpen: modals.login,
-                        onLoginSuccess: handleLoginSuccess,
-                        onSwitchToRegister: ()=>setModals((prev)=>({
-                                    ...prev,
-                                    login: false,
-                                    register: true
-                                }))
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.js",
-                        lineNumber: 324,
-                        columnNumber: 11
-                    }, this),
-                    user && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$CharacterModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                isOpen: modals.character,
-                                currentChar: user?.charType,
-                                onClose: ()=>setModals((prev)=>({
-                                            ...prev,
-                                            character: false
-                                        })),
-                                onSelect: handleSelectCharacter
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.js",
-                                lineNumber: 332,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$PledgeModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                isOpen: modals.pledge,
-                                isDone: user?.pledgeDone,
-                                userName: user?.userName,
-                                onClose: ()=>setModals((prev)=>({
-                                            ...prev,
-                                            pledge: false
-                                        })),
-                                onConfirm: handlePledge
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.js",
-                                lineNumber: 338,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$EduModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                isOpen: modals.edu,
-                                onClose: ()=>setModals((prev)=>({
-                                            ...prev,
-                                            edu: false
-                                        }))
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.js",
-                                lineNumber: 345,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$TextInputModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                isOpen: modals.textInput,
-                                title: pendingTextMission?.title,
-                                desc: pendingTextMission?.id === 'm4' ? '어떤 페이퍼리스 활동을 하셨나요?\n(예: 태블릿으로 회의 참석, 이면지 사용 등)' : '활동 내용을 입력해주세요.',
-                                onClose: ()=>setModals((prev)=>({
-                                            ...prev,
-                                            textInput: false
-                                        })),
-                                onSubmit: (content)=>{
-                                    handleMissionComplete(pendingTextMission, content);
-                                    setModals((prev)=>({
-                                            ...prev,
-                                            textInput: false
-                                        }));
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.js",
-                                lineNumber: 349,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$GrantModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                isOpen: modals.grant,
-                                onClose: ()=>setModals((prev)=>({
-                                            ...prev,
-                                            grant: false
-                                        })),
-                                onSubmit: handleGrant
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.js",
-                                lineNumber: 359,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$InfoModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                isOpen: modals.info,
-                                onClose: ()=>setModals((prev)=>({
-                                            ...prev,
-                                            info: false
-                                        }))
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.js",
-                                lineNumber: 364,
-                                columnNumber: 15
-                            }, this)
-                        ]
-                    }, void 0, true),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Toast$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        message: toastMessage,
-                        onClose: ()=>setToastMessage('')
-                    }, void 0, false, {
-                        fileName: "[project]/app/page.js",
-                        lineNumber: 370,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if (!mounted) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "w-full max-w-md bg-white app-container sm:rounded-[2.5rem] shadow-2xl relative flex flex-col overflow-hidden sm:border-[6px] sm:border-gray-200",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex-1 flex items-center justify-center bg-white h-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "animate-pulse flex flex-col items-center",
@@ -3882,26 +3609,281 @@ function Page() {
                             className: "w-12 h-12 bg-green-100 rounded-full mb-4"
                         }, void 0, false, {
                             fileName: "[project]/app/page.js",
-                            lineNumber: 375,
+                            lineNumber: 258,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "h-4 w-24 bg-gray-100 rounded"
                         }, void 0, false, {
                             fileName: "[project]/app/page.js",
-                            lineNumber: 376,
+                            lineNumber: 259,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/page.js",
-                    lineNumber: 374,
+                    lineNumber: 257,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 373,
+                lineNumber: 256,
                 columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/page.js",
+            lineNumber: 255,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "w-full max-w-md bg-white app-container sm:rounded-[2.5rem] shadow-2xl relative flex flex-col overflow-hidden sm:border-[6px] sm:border-gray-200",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                onLogout: handleLogout,
+                onDeleteAccount: handleDeleteAccount
+            }, void 0, false, {
+                fileName: "[project]/app/page.js",
+                lineNumber: 268,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "flex-1 overflow-y-auto pb-6",
+                children: user ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: [
+                        activeTab === 'home' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tabs$2f$HomeTab$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            profile: user,
+                            onOpenCharacterModal: ()=>setModals((prev)=>({
+                                        ...prev,
+                                        character: true
+                                    })),
+                            onOpenEduModal: ()=>setModals((prev)=>({
+                                        ...prev,
+                                        edu: true
+                                    })),
+                            missionStats: {
+                                completed: Object.entries(todayMissions).filter(([id, date])=>![
+                                        'pledge',
+                                        'm8',
+                                        'm9'
+                                    ].includes(id) && date === new Date().toISOString().split('T')[0]).length,
+                                total: missions.filter((m)=>![
+                                        'pledge',
+                                        'm8',
+                                        'm9'
+                                    ].includes(m.id)).length
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/app/page.js",
+                            lineNumber: 273,
+                            columnNumber: 15
+                        }, this),
+                        activeTab === 'missions' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tabs$2f$MissionsTab$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            missions: missions,
+                            todayMissions: todayMissions,
+                            pledgeDone: user?.pledgeDone,
+                            onOpenPledgeModal: ()=>setModals((prev)=>({
+                                        ...prev,
+                                        pledge: true
+                                    })),
+                            onTriggerCamera: (id, title, points, carbon)=>{
+                                setPendingCameraMission({
+                                    id,
+                                    title,
+                                    points,
+                                    carbon
+                                });
+                                document.getElementById('camera-input')?.click();
+                            },
+                            onHandleTextMission: (id, title, points, carbon)=>{
+                                setPendingTextMission({
+                                    id,
+                                    title,
+                                    points,
+                                    carbon
+                                });
+                                setModals((prev)=>({
+                                        ...prev,
+                                        textInput: true
+                                    }));
+                            },
+                            onQrClick: (mission)=>{
+                                if (mission.id === 'm9') {
+                                    setToastMessage('물품을 기증하셨다면 담당자에게 신고해 주세요.');
+                                } else {
+                                    setToastMessage('폐배터리를 수거하셨다면 담당자에게 신고해 주세요.');
+                                }
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/app/page.js",
+                            lineNumber: 286,
+                            columnNumber: 15
+                        }, this),
+                        activeTab === 'forest' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tabs$2f$RankingTab$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            rankings: rankings,
+                            totalBranchCarbon: totalCarbon,
+                            currentUserEmpId: user?.empId,
+                            onRefresh: ()=>{
+                                loadUserProfile();
+                                refreshRankings();
+                            },
+                            onOpenGrantModal: ()=>setModals((prev)=>({
+                                        ...prev,
+                                        grant: true
+                                    })),
+                            onOpenInfoModal: ()=>setModals((prev)=>({
+                                        ...prev,
+                                        info: true
+                                    }))
+                        }, void 0, false, {
+                            fileName: "[project]/app/page.js",
+                            lineNumber: 309,
+                            columnNumber: 15
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/page.js",
+                    lineNumber: 271,
+                    columnNumber: 11
+                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex-1 flex items-center justify-center h-full text-gray-400 text-sm",
+                    children: "로그인이 필요합니다."
+                }, void 0, false, {
+                    fileName: "[project]/app/page.js",
+                    lineNumber: 323,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/page.js",
+                lineNumber: 269,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$BottomNav$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                activeTab: activeTab,
+                onTabChange: setActiveTab
+            }, void 0, false, {
+                fileName: "[project]/app/page.js",
+                lineNumber: 328,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$RegisterModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                isOpen: modals.register,
+                onRegisterSuccess: handleRegisterSuccess,
+                onSwitchToLogin: ()=>setModals((prev)=>({
+                            ...prev,
+                            login: true,
+                            register: false
+                        }))
+            }, void 0, false, {
+                fileName: "[project]/app/page.js",
+                lineNumber: 330,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$LoginModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                isOpen: modals.login,
+                onLoginSuccess: handleLoginSuccess,
+                onSwitchToRegister: ()=>setModals((prev)=>({
+                            ...prev,
+                            login: false,
+                            register: true
+                        }))
+            }, void 0, false, {
+                fileName: "[project]/app/page.js",
+                lineNumber: 335,
+                columnNumber: 7
+            }, this),
+            user && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$CharacterModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isOpen: modals.character,
+                        currentChar: user?.charType,
+                        onClose: ()=>setModals((prev)=>({
+                                    ...prev,
+                                    character: false
+                                })),
+                        onSelect: handleSelectCharacter
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.js",
+                        lineNumber: 343,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$PledgeModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isOpen: modals.pledge,
+                        isDone: user?.pledgeDone,
+                        userName: user?.userName,
+                        onClose: ()=>setModals((prev)=>({
+                                    ...prev,
+                                    pledge: false
+                                })),
+                        onConfirm: handlePledge
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.js",
+                        lineNumber: 349,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$EduModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isOpen: modals.edu,
+                        onClose: ()=>setModals((prev)=>({
+                                    ...prev,
+                                    edu: false
+                                }))
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.js",
+                        lineNumber: 356,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$TextInputModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isOpen: modals.textInput,
+                        title: pendingTextMission?.title,
+                        desc: pendingTextMission?.id === 'm4' ? '어떤 페이퍼리스 활동을 하셨나요?\n(예: 태블릿으로 회의 참석, 이면지 사용 등)' : '활동 내용을 입력해주세요.',
+                        onClose: ()=>setModals((prev)=>({
+                                    ...prev,
+                                    textInput: false
+                                })),
+                        onSubmit: (content)=>{
+                            handleMissionComplete(pendingTextMission, content);
+                            setModals((prev)=>({
+                                    ...prev,
+                                    textInput: false
+                                }));
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.js",
+                        lineNumber: 360,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$GrantModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isOpen: modals.grant,
+                        onClose: ()=>setModals((prev)=>({
+                                    ...prev,
+                                    grant: false
+                                })),
+                        onSubmit: handleGrant
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.js",
+                        lineNumber: 370,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modals$2f$InfoModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isOpen: modals.info,
+                        onClose: ()=>setModals((prev)=>({
+                                    ...prev,
+                                    info: false
+                                }))
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.js",
+                        lineNumber: 375,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Toast$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                message: toastMessage,
+                onClose: ()=>setToastMessage('')
+            }, void 0, false, {
+                fileName: "[project]/app/page.js",
+                lineNumber: 381,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$3_react$2d$dom$40$19$2e$2$2e$4_react$40$19$2e$2$2e$4_$5f$react$40$19$2e$2$2e$4$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                 type: "file",
@@ -3912,13 +3894,13 @@ function Page() {
                 onChange: handleFileChange
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 381,
+                lineNumber: 383,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.js",
-        lineNumber: 254,
+        lineNumber: 267,
         columnNumber: 5
     }, this);
 }

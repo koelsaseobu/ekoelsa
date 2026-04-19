@@ -103,9 +103,6 @@ export default function RankingTab({ rankings, totalBranchCarbon, onOpenGrantMod
                 )}
                 <div className="text-right flex flex-col items-end">
                   <div className="font-bold text-green-600 text-sm">{user.points.toLocaleString()}P</div>
-                  <div className="text-[10px] text-blue-500 font-medium bg-blue-50 px-1.5 py-0.5 rounded mt-0.5">
-                    🛢️ {(user.carbonSaved * 0.4).toFixed(2)}L 절감
-                  </div>
                 </div>
               </div>
             </div>

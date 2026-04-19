@@ -1,5 +1,12 @@
 {
+  "/api/admin/stats/reset/route": "app/api/admin/stats/reset/route.js",
+  "/api/admin/users/[empId]/reset/route": "app/api/admin/users/[empId]/reset/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/missions/[id]/verify/route": "app/api/missions/[id]/verify/route.js",
   "/api/missions/route": "app/api/missions/route.js",
+  "/api/points/gift/route": "app/api/points/gift/route.js",
   "/api/rankings/route": "app/api/rankings/route.js",
+  "/api/users/me/route": "app/api/users/me/route.js",
+  "/api/users/onboard/route": "app/api/users/onboard/route.js",
   "/page": "app/page.js"
 }

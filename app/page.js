@@ -250,133 +250,135 @@ export default function Page() {
     }
   };
 
-  return (
-    <div className="w-full max-w-md bg-white app-container sm:rounded-[2.5rem] shadow-2xl relative flex flex-col overflow-hidden sm:border-[6px] sm:border-gray-200" suppressHydrationWarning>
-      {mounted ? (
-        <>
-          <Header onLogout={handleLogout} onDeleteAccount={handleDeleteAccount} suppressHydrationWarning />
-          <main className="flex-1 overflow-y-auto pb-6" suppressHydrationWarning>
-            {user ? (
-              <div suppressHydrationWarning>
-                {activeTab === 'home' && (
-                  <HomeTab 
-                    profile={user} 
-                    onOpenCharacterModal={() => setModals(prev => ({ ...prev, character: true }))}
-                    onOpenEduModal={() => setModals(prev => ({ ...prev, edu: true }))}
-                    missionStats={{
-                      completed: Object.entries(todayMissions).filter(([id, date]) => 
-                        !['pledge', 'm8', 'm9'].includes(id) && date === new Date().toISOString().split('T')[0]
-                      ).length,
-                      total: missions.filter(m => !['pledge', 'm8', 'm9'].includes(m.id)).length
-                    }}
-                    suppressHydrationWarning
-                  />
-                )}
-                {activeTab === 'missions' && (
-                  <MissionsTab 
-                    missions={missions}
-                    todayMissions={todayMissions}
-                    pledgeDone={user?.pledgeDone}
-                    onOpenPledgeModal={() => setModals(prev => ({ ...prev, pledge: true }))}
-                    onTriggerCamera={(id, title, points, carbon) => {
-                      setPendingCameraMission({ id, title, points, carbon });
-                      document.getElementById('camera-input')?.click();
-                    }}
-                    onHandleTextMission={(id, title, points, carbon) => {
-                      setPendingTextMission({ id, title, points, carbon });
-                      setModals(prev => ({ ...prev, textInput: true }));
-                    }}
-                    onQrClick={(mission) => {
-                      if (mission.id === 'm9') {
-                        setToastMessage('물품을 기증하셨다면 담당자에게 신고해 주세요.');
-                      } else {
-                        setToastMessage('폐배터리를 수거하셨다면 담당자에게 신고해 주세요.');
-                      }
-                    }}
-                    suppressHydrationWarning
-                  />
-                )}
-                {activeTab === 'forest' && (
-                  <RankingTab 
-                    rankings={rankings}
-                    totalBranchCarbon={totalCarbon}
-                    currentUserEmpId={user?.empId}
-                    onRefresh={loadUserProfile}
-                    onOpenGrantModal={() => setModals(prev => ({ ...prev, grant: true }))}
-                    onOpenInfoModal={() => setModals(prev => ({ ...prev, info: true }))}
-                    suppressHydrationWarning
-                  />
-                )}
-              </div>
-            ) : (
-              <div className="flex-1 flex items-center justify-center h-full text-gray-400 text-sm" suppressHydrationWarning>
-                로그인이 필요합니다.
-              </div>
-            )}
-          </main>
-          <BottomNav activeTab={activeTab} onTabChange={setActiveTab} suppressHydrationWarning />
-          
-          <RegisterModal 
-            isOpen={modals.register} 
-            onRegisterSuccess={handleRegisterSuccess} 
-            onSwitchToLogin={() => setModals(prev => ({ ...prev, login: true, register: false }))}
-          />
-          <LoginModal 
-            isOpen={modals.login}
-            onLoginSuccess={handleLoginSuccess}
-            onSwitchToRegister={() => setModals(prev => ({ ...prev, login: false, register: true }))}
-          />
-
-          {user && (
-            <>
-              <CharacterModal 
-                isOpen={modals.character} 
-                currentChar={user?.charType}
-                onClose={() => setModals(prev => ({ ...prev, character: false }))}
-                onSelect={handleSelectCharacter}
-              />
-              <PledgeModal 
-                isOpen={modals.pledge}
-                isDone={user?.pledgeDone}
-                userName={user?.userName}
-                onClose={() => setModals(prev => ({ ...prev, pledge: false }))}
-                onConfirm={handlePledge}
-              />
-              <EduModal 
-                isOpen={modals.edu}
-                onClose={() => setModals(prev => ({ ...prev, edu: false }))}
-              />
-              <TextInputModal 
-                isOpen={modals.textInput}
-                title={pendingTextMission?.title}
-                desc={pendingTextMission?.id === 'm4' ? '어떤 페이퍼리스 활동을 하셨나요?\n(예: 태블릿으로 회의 참석, 이면지 사용 등)' : '활동 내용을 입력해주세요.'}
-                onClose={() => setModals(prev => ({ ...prev, textInput: false }))}
-                onSubmit={(content) => {
-                  handleMissionComplete(pendingTextMission, content);
-                  setModals(prev => ({ ...prev, textInput: false }));
-                }}
-              />
-              <GrantModal 
-                isOpen={modals.grant}
-                onClose={() => setModals(prev => ({ ...prev, grant: false }))}
-                onSubmit={handleGrant}
-              />
-              <InfoModal 
-                isOpen={modals.info}
-                onClose={() => setModals(prev => ({ ...prev, info: false }))}
-              />
-            </>
-          )}
-          <Toast message={toastMessage} onClose={() => setToastMessage('')} />
-        </>
-      ) : (
+  if (!mounted) {
+    return (
+      <div className="w-full max-w-md bg-white app-container sm:rounded-[2.5rem] shadow-2xl relative flex flex-col overflow-hidden sm:border-[6px] sm:border-gray-200">
         <div className="flex-1 flex items-center justify-center bg-white h-full">
           <div className="animate-pulse flex flex-col items-center">
             <div className="w-12 h-12 bg-green-100 rounded-full mb-4"></div>
             <div className="h-4 w-24 bg-gray-100 rounded"></div>
           </div>
         </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full max-w-md bg-white app-container sm:rounded-[2.5rem] shadow-2xl relative flex flex-col overflow-hidden sm:border-[6px] sm:border-gray-200">
+      <Header onLogout={handleLogout} onDeleteAccount={handleDeleteAccount} />
+      <main className="flex-1 overflow-y-auto pb-6">
+        {user ? (
+          <div>
+            {activeTab === 'home' && (
+              <HomeTab 
+                profile={user} 
+                onOpenCharacterModal={() => setModals(prev => ({ ...prev, character: true }))}
+                onOpenEduModal={() => setModals(prev => ({ ...prev, edu: true }))}
+                missionStats={{
+                  completed: Object.entries(todayMissions).filter(([id, date]) => 
+                    !['pledge', 'm8', 'm9'].includes(id) && date === new Date().toISOString().split('T')[0]
+                  ).length,
+                  total: missions.filter(m => !['pledge', 'm8', 'm9'].includes(m.id)).length
+                }}
+              />
+            )}
+            {activeTab === 'missions' && (
+              <MissionsTab 
+                missions={missions}
+                todayMissions={todayMissions}
+                pledgeDone={user?.pledgeDone}
+                onOpenPledgeModal={() => setModals(prev => ({ ...prev, pledge: true }))}
+                onTriggerCamera={(id, title, points, carbon) => {
+                  setPendingCameraMission({ id, title, points, carbon });
+                  document.getElementById('camera-input')?.click();
+                }}
+                onHandleTextMission={(id, title, points, carbon) => {
+                  setPendingTextMission({ id, title, points, carbon });
+                  setModals(prev => ({ ...prev, textInput: true }));
+                }}
+                onQrClick={(mission) => {
+                  if (mission.id === 'm9') {
+                    setToastMessage('물품을 기증하셨다면 담당자에게 신고해 주세요.');
+                  } else {
+                    setToastMessage('폐배터리를 수거하셨다면 담당자에게 신고해 주세요.');
+                  }
+                }}
+              />
+            )}
+            {activeTab === 'forest' && (
+              <RankingTab 
+                rankings={rankings}
+                totalBranchCarbon={totalCarbon}
+                currentUserEmpId={user?.empId}
+                onRefresh={() => {
+                  loadUserProfile();
+                  refreshRankings();
+                }}
+                onOpenGrantModal={() => setModals(prev => ({ ...prev, grant: true }))}
+                onOpenInfoModal={() => setModals(prev => ({ ...prev, info: true }))}
+              />
+            )}
+          </div>
+        ) : (
+          <div className="flex-1 flex items-center justify-center h-full text-gray-400 text-sm">
+            로그인이 필요합니다.
+          </div>
+        )}
+      </main>
+      <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
+
+      <RegisterModal 
+        isOpen={modals.register} 
+        onRegisterSuccess={handleRegisterSuccess} 
+        onSwitchToLogin={() => setModals(prev => ({ ...prev, login: true, register: false }))}
+      />
+      <LoginModal 
+        isOpen={modals.login}
+        onLoginSuccess={handleLoginSuccess}
+        onSwitchToRegister={() => setModals(prev => ({ ...prev, login: false, register: true }))}
+      />
+
+      {user && (
+        <>
+          <CharacterModal 
+            isOpen={modals.character} 
+            currentChar={user?.charType}
+            onClose={() => setModals(prev => ({ ...prev, character: false }))}
+            onSelect={handleSelectCharacter}
+          />
+          <PledgeModal 
+            isOpen={modals.pledge}
+            isDone={user?.pledgeDone}
+            userName={user?.userName}
+            onClose={() => setModals(prev => ({ ...prev, pledge: false }))}
+            onConfirm={handlePledge}
+          />
+          <EduModal 
+            isOpen={modals.edu}
+            onClose={() => setModals(prev => ({ ...prev, edu: false }))}
+          />
+          <TextInputModal 
+            isOpen={modals.textInput}
+            title={pendingTextMission?.title}
+            desc={pendingTextMission?.id === 'm4' ? '어떤 페이퍼리스 활동을 하셨나요?\n(예: 태블릿으로 회의 참석, 이면지 사용 등)' : '활동 내용을 입력해주세요.'}
+            onClose={() => setModals(prev => ({ ...prev, textInput: false }))}
+            onSubmit={(content) => {
+              handleMissionComplete(pendingTextMission, content);
+              setModals(prev => ({ ...prev, textInput: false }));
+            }}
+          />
+          <GrantModal 
+            isOpen={modals.grant}
+            onClose={() => setModals(prev => ({ ...prev, grant: false }))}
+            onSubmit={handleGrant}
+          />
+          <InfoModal 
+            isOpen={modals.info}
+            onClose={() => setModals(prev => ({ ...prev, info: false }))}
+          />
+        </>
       )}
+      <Toast message={toastMessage} onClose={() => setToastMessage('')} />
 
       <input 
         type="file" 

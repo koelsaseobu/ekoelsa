@@ -1,0 +1,3 @@
+{
+  "/api/admin/stats/reset/route": "app/api/admin/stats/reset/route.js"
+}
